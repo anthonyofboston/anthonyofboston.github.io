@@ -5,7 +5,7 @@ import { spanishMode, translate } from "./index.js";
 let labels = [];
 let bars = [];
 let classes;
-let song1air = new Audio('https://dl.dropboxusercontent.com/scl/fi/dtag9d02zn53p3v74orwz/p_33251689_910.mp3?rlkey=ll5ha1damo08vwe2ixt8gt31b&st=i5bcbpq8&.mp3dl=0');
+var song1air = new Audio('https://dl.dropboxusercontent.com/scl/fi/dtag9d02zn53p3v74orwz/p_33251689_910.mp3?rlkey=ll5ha1damo08vwe2ixt8gt31b&st=i5bcbpq8&.mp3dl=0');
 // This function makes the bar graph
 // it takes in a URL to a teachable machine model,
 // so we can retrieve the labels of our classes for the bars
@@ -27,8 +27,6 @@ export async function setupBarGraph(URL) {
 // This function makes a bar in the graph
 function makeBar(label, index) {
   // make the elements of the bar
-   song1air.play();
-song1air.loop = true;
   let barWrapper = document.createElement("div");
   // barWrapper.classList.add('probability');
 
@@ -38,10 +36,11 @@ song1air.loop = true;
   let labelText;
   // let labelEl = document.createElement('span');
   if (label === "Background Noise") {
-    labelText = spanishMode ? "Background Noise" : "Background Noise";
-   document.getElementById("mainText");
-  song1air.play();
+     song1air.play();
 song1air.loop = true;
+    labelText = spanishMode ? "Background Noise" : "Background Noise";
+  
+
   } else {
     labelText = spanishMode ? translate(label) : label;
   }
