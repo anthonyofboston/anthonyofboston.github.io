@@ -48,7 +48,7 @@ currentPrediction = previousPrediction;
 const startButton = document.getElementsByTagName("button")[0];
 const introSection = document.getElementsByClassName("intro")[0];
 
-startButton.onclick = () => {
+
   introSection.style.display = "none";
   setupModel(URL, data => {
     let maximum = Math.max(...data);
@@ -83,7 +83,7 @@ startButton.onclick = () => {
   });
 
   initSpectrogram();
-};
+
 
 async function setupModel(URL, predictionCB) {
   //store the prediction and audio callback functions
