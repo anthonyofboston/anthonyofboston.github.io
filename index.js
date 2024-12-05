@@ -89,7 +89,7 @@ const song1air = new Audio('https://dl.dropboxusercontent.com/scl/fi/dtag9d02zn5
 
   initSpectrogram();
 
-if (labelEngils === "Background Noise"){
+if (labelsSpa[0] ){
  song1air.play();
 song1air.loop = true;
 }
