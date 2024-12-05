@@ -35,8 +35,8 @@ function makeBar(label, index) {
   // let percentEl = document.createElement('span');
   let labelText;
   // let labelEl = document.createElement('span');
-  if (label === "_background_noise_") {
-    labelText = spanishMode ? "Ruido de fondo" : "Background noise";
+  if (label === "Background Noise") {
+    labelText = spanishMode ? "Background Noise" : "Background Noise";
   } else {
     labelText = spanishMode ? translate(label) : label;
   }
