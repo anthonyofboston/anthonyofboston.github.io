@@ -26,7 +26,7 @@ button {
   background: white;
   border: none;
   padding: 0.5em 1em;
-  font-size: 1em;
+  font-size: 0.5em;
   border-radius: 3px;
 }
 
@@ -72,7 +72,7 @@ canvas {
   background: rgb(22, 19, 54);
   color: white;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 0.5em;
   font-family: Helvetica;
 }
 
@@ -80,14 +80,14 @@ progress {
   display: block;
   width: 50%;
   height: 10px;
-  margin: 0.7em 0;
+  margin: 0.5em 0;
   background: rgba(255, 255, 255, 0.3);
   position: relative;
 }
 
 progress:before {
   content: attr(data-label);
-  font-size: 1em;
+  font-size: 0.5em;
   vertical-align: middle;
 
   /*Position text over the progress bar */
@@ -305,14 +305,14 @@ progress::-webkit-progress-bar {
   background-color: #222;
   width: 460px;
   padding: 15px;
-  font-size: 13px;
+  font-size: 8px;
   line-height: 15px;
 }
 #dg-new-constructor {
   padding: 10px;
   color: #222;
   font-family: Monaco, monospace;
-  font-size: 10px;
+  font-size: 8px;
   border: 0;
   resize: none;
   box-shadow: inset 1px 1px 1px #888;
@@ -326,7 +326,7 @@ progress::-webkit-progress-bar {
 }
 #dg-local-explain {
   display: none;
-  font-size: 11px;
+  font-size: 8px;
   line-height: 17px;
   border-radius: 3px;
   background-color: #333;
@@ -334,14 +334,14 @@ progress::-webkit-progress-bar {
   margin-top: 10px;
 }
 #dg-local-explain code {
-  font-size: 10px;
+  font-size: 8px;
 }
 #dat-gui-save-locally {
   display: none;
 }
 .dg {
   color: #eee;
-  font: 11px "Lucida Grande", sans-serif;
+  font: 8px "Lucida Grande", sans-serif;
   text-shadow: 0 -1px 0 #111;
 }
 .dg.main::-webkit-scrollbar {
@@ -373,7 +373,7 @@ progress::-webkit-progress-bar {
   margin-left: 5px;
   margin-top: 1px;
   border-radius: 2px;
-  font-size: 9px;
+  font-size: 8px;
   line-height: 7px;
   padding: 4px 4px 5px 4px;
   background: #c5bdad;
