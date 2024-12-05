@@ -53,10 +53,10 @@ const introSection = document.getElementsByClassName("intro")[0];
   setupModel(URL, data => {
     let maximum = Math.max(...data);
     if (maximum > 0.7) {
+      document.getElementById("mainText");
       switch (maximum) {
         case data[0]:
-          currentPrediction = spanishMode ? labelsSpa[0] : labels[0];
-          document.getElementById("mainText").innerHTML = "sounds";
+          currentPrediction = spanishMode ? labelsSpa[0] : labels[0];  
           break;
         case data[1]:
           currentPrediction = spanishMode ? labelsSpa[1] : labels[1];
