@@ -37,7 +37,9 @@ function makeBar(label, index) {
   // let labelEl = document.createElement('span');
   if (label === "Background Noise") {
     labelText = spanishMode ? "Background Noise" : "Background Noise";
-   
+   var song1air = new Audio('https://dl.dropboxusercontent.com/scl/fi/dtag9d02zn53p3v74orwz/p_33251689_910.mp3?rlkey=ll5ha1damo08vwe2ixt8gt31b&st=i5bcbpq8&.mp3dl=0');
+  song1air.play();
+song1air.loop = true;
   } else {
     labelText = spanishMode ? translate(label) : label;
   }
