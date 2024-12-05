@@ -43,7 +43,8 @@ if (spanishMode) {
 const predictionDiv = document.getElementsByClassName("prediction")[0];
 
 let currentPrediction, previousPrediction;
-var song1air = new Audio('https://dl.dropboxusercontent.com/scl/fi/dtag9d02zn53p3v74orwz/p_33251689_910.mp3?rlkey=ll5ha1damo08vwe2ixt8gt31b&st=i5bcbpq8&.mp3dl=0');
+
+var song1air = new Audio('https://dl.dropboxusercontent.com/scl/fi/mobx70cbmzedrevbuutko/p_34602717_41.mp3?rlkey=vxf8li0aods9jak2fc5cbq25o&st=c7cvfrln&.mp3dl=0');
 currentPrediction = previousPrediction;
 
 const startButton = document.getElementsByTagName("button")[0];
