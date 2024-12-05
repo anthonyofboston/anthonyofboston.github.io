@@ -60,7 +60,7 @@ introSection.style.display = "none";
         case data[0]:
           currentPrediction = spanishMode ? labelsSpa[0] : labels[0];  
           break;
-
+document.getElementById("mainText");
       
         case data[1]:
           currentPrediction = spanishMode ? labelsSpa[1] : labels[1];
