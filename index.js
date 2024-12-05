@@ -56,7 +56,7 @@ const introSection = document.getElementsByClassName("intro")[0];
       switch (maximum) {
         case data[0]:
           currentPrediction = spanishMode ? labelsSpa[0] : labels[0];
-          document.getElementById("demo").innerHTML = "sounds";
+          document.getElementById("mainText").innerHTML = "sounds";
           break;
         case data[1]:
           currentPrediction = spanishMode ? labelsSpa[1] : labels[1];
