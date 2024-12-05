@@ -54,10 +54,11 @@ var song1air = new Audio('https://dl.dropboxusercontent.com/scl/fi/dtag9d02zn53p
     song1air.loop = false;
     let maximum = Math.max(...data);
     if (maximum > 0.7) {
-      document.getElementById("mainText");
-      switch (maximum) {
-          song1air.play();
+      document.getElementById("mainText").innerHTML = "sssssssss";
+       song1air.play();
 song1air.loop = true;
+      switch (maximum) {
+         
         case data[0]:
           currentPrediction = spanishMode ? labelsSpa[0] : labels[0];  
           break;
