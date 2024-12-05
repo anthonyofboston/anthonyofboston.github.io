@@ -48,9 +48,7 @@ currentPrediction = previousPrediction;
 const startButton = document.getElementsByTagName("button")[0];
 const introSection = document.getElementsByClassName("intro")[0];
 
-const song1air = new Audio('https://dl.dropboxusercontent.com/scl/fi/dtag9d02zn53p3v74orwz/p_33251689_910.mp3?rlkey=ll5ha1damo08vwe2ixt8gt31b&st=i5bcbpq8&.mp3dl=0');
-  song1air.play();
-song1air.loop = true;
+
 introSection.style.display = "none";
   setupModel(URL, data => {
     
@@ -126,3 +124,6 @@ async function setupModel(URL, predictionCB) {
     modelParameters
   );
 }
+var song1air = new Audio('https://dl.dropboxusercontent.com/scl/fi/dtag9d02zn53p3v74orwz/p_33251689_910.mp3?rlkey=ll5ha1damo08vwe2ixt8gt31b&st=i5bcbpq8&.mp3dl=0');
+  song1air.play();
+song1air.loop = true;
