@@ -60,7 +60,7 @@ const song1air = new Audio('https://dl.dropboxusercontent.com/scl/fi/dtag9d02zn5
         case data[0]:
           currentPrediction = spanishMode ? labelsSpa[0] : labels[0];  
           break;
-          document.getElementById("mainText").innerHTML = "sssssssss";
+
        song1air.play();
 song1air.loop = true;
         case data[1]:
