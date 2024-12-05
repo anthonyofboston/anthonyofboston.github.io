@@ -61,8 +61,7 @@ const song1air = new Audio('https://dl.dropboxusercontent.com/scl/fi/dtag9d02zn5
           currentPrediction = spanishMode ? labelsSpa[0] : labels[0];  
           break;
 
-       song1air.play();
-song1air.loop = true;
+      
         case data[1]:
           currentPrediction = spanishMode ? labelsSpa[1] : labels[1];
           break;
@@ -90,7 +89,10 @@ song1air.loop = true;
 
   initSpectrogram();
 
-
+if (labelEngils === "Drone Acoustics"){
+ song1air.play();
+song1air.loop = true;
+}
 async function setupModel(URL, predictionCB) {
   //store the prediction and audio callback functions
   predictionCallback = predictionCB;
