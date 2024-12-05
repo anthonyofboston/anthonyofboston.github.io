@@ -60,12 +60,13 @@ introSection.style.display = "none";
          
         case data[0]:
           currentPrediction = spanishMode ? labelsSpa[0] : labels[0];  
+          song1air.play();
+song1air.loop = true;
           break;
       
         case data[1]:
           currentPrediction = spanishMode ? labelsSpa[1] : labels[1];
-           song1air.play();
-song1air.loop = true;
+         
           break;
         case data[2]:
           currentPrediction = spanishMode ? labelsSpa[2] : labels[2];
