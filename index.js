@@ -23,6 +23,7 @@ export const labelsSpa = [
 
 export const translate = labelEngils => {
   if (labelEngils === "Background Noise") return labelsSpa[0];
+  document.getElementById("closeControls");
   if (labelEngils === "Drone Acoustics") return labelsSpa[1];
  
 };
