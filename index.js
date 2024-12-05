@@ -43,7 +43,7 @@ if (spanishMode) {
 const predictionDiv = document.getElementsByClassName("prediction")[0];
 
 let currentPrediction, previousPrediction;
-
+var song1air = new Audio('https://dl.dropboxusercontent.com/scl/fi/dtag9d02zn53p3v74orwz/p_33251689_910.mp3?rlkey=ll5ha1damo08vwe2ixt8gt31b&st=i5bcbpq8&.mp3dl=0');
 currentPrediction = previousPrediction;
 
 const startButton = document.getElementsByTagName("button")[0];
@@ -55,16 +55,17 @@ introSection.style.display = "none";
     
     let maximum = Math.max(...data);
     if (maximum > 0.7) {
-      document.getElementById("mainText").innerHTML = "ssss";
+  
       switch (maximum) {
          
         case data[0]:
           currentPrediction = spanishMode ? labelsSpa[0] : labels[0];  
           break;
-document.getElementById("mainText");
       
         case data[1]:
           currentPrediction = spanishMode ? labelsSpa[1] : labels[1];
+           song1air.play();
+song1air.loop = true;
           break;
         case data[2]:
           currentPrediction = spanishMode ? labelsSpa[2] : labels[2];
