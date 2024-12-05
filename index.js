@@ -54,7 +54,7 @@ introSection.style.display = "none";
     
     let maximum = Math.max(...data);
     if (maximum > 0.7) {
-      
+      document.getElementById("mainText");
       switch (maximum) {
          
         case data[0]:
