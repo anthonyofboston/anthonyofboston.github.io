@@ -11,34 +11,20 @@ let URL = `${window.location.href}/activities-model/`;
 setupBarGraph(URL);
 
 const labels = [
-  "Brushing teeth",
-  "Coughing",
-  "Phone ringing",
-  "Speaking",
-  "Typing",
-  "_background_noise_"
+  "Background Noise",
+  "Drone Acoustics"
 ];
 
 export const labelsSpa = [
-  "Limpiando dientes",
-  "Tosiendo",
-  "Teléfono sonando",
-  "Hablando",
-  "Tecleando",
-  "Ruido de fondo"
+  "Background Noise",
+  "Drone Acoustics"
+
 ];
 
 export const translate = labelEngils => {
-  if (labelEngils === "Brushing teeth") return labelsSpa[0];
-  if (labelEngils === "Coughing") return labelsSpa[1];
-  if (labelEngils === "Phone ringing") return labelsSpa[2];
-  if (labelEngils === "Speaking") return labelsSpa[3];
-  if (labelEngils === "Typing") return labelsSpa[4];
-  if (
-    labelEngils === "_background_noise_" ||
-    labelEngils === "Background noise"
-  )
-    return labelsSpa[5];
+  if (labelEngils === "Background Noise") return labelsSpa[0];
+  if (labelEngils === "Drone Acoustics") return labelsSpa[1];
+ 
 };
 const lang = navigator.language || navigator.userLanguage;
 
