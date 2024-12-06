@@ -44,14 +44,14 @@ canvas {
 }
 
 .classes {
-  position: absolute;
+  position: relative;
   margin: 0.5em 1em;
   top: 0;
   left: 0;
   color: white;
   text-align: center;
   font-size: 5px;
-  width: 40%;
+  width: 20%;
   text-align: left;
 }
 
