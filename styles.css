@@ -42,9 +42,8 @@ canvas {
 .dg {
   display: none;
 }
-
 .classes {
-  position: relative;
+  position: absolute;
   margin: 0.5em 1em;
   top: 0;
   left: 0;
@@ -54,6 +53,7 @@ canvas {
   width: 40%;
   text-align: left;
 }
+
 
 .classes p {
   display: inline-block;
