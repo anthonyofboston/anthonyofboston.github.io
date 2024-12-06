@@ -61,6 +61,7 @@ introSection.style.display = "none";
          
         case data[0]:
           currentPrediction = spanishMode ? labelsSpa[0] : labels[0];  
+          song1air.loop = false;
           
           break;
       
