@@ -5,7 +5,7 @@ import { spanishMode, translate } from "./index.js";
 let labels = [];
 let bars = [];
 let classes;
-
+var song1air = new Audio('https://dl.dropboxusercontent.com/scl/fi/dtag9d02zn53p3v74orwz/p_33251689_910.mp3?rlkey=ll5ha1damo08vwe2ixt8gt31b&st=i5bcbpq8&.mp3dl=0');
 // This function makes the bar graph
 // it takes in a URL to a teachable machine model,
 // so we can retrieve the labels of our classes for the bars
@@ -35,12 +35,12 @@ function makeBar(label, index) {
   // let percentEl = document.createElement('span');
   let labelText;
   // let labelEl = document.createElement('span');
-  if (label === "Background Noise") {
-    
-    labelText = spanishMode ? "Background Noise" : "Background Noise";
-  
-
+  if (label === "_background_noise_") {
+    labelText = spanishMode ? "Ruido de fondo" : "Background noise";
+      
+ 
   } else {
+       
     labelText = spanishMode ? translate(label) : label;
   }
 
