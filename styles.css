@@ -152,6 +152,7 @@ progress::-webkit-progress-bar {
   cursor: pointer;
   text-align: center;
   background-color: #000;
+  display: none;
 }
 .dg.main .close-button:hover {
   background-color: #111;
