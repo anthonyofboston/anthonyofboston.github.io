@@ -1,7 +1,5 @@
 
 
-
-
 /* dat gui */
 .dg {
   display: none;
@@ -98,6 +96,24 @@ progress::-webkit-progress-bar {
 #deletethislater{
     
     
+    }
+
+#webcam1 {
+
+border: 1px solid black;
+  display: block;
+ 
+border: none;
+
+position: fixed;
+font-style: bold;
+  color: #ff9853;
+ 
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -300;
+   
+    background-size: cover;
+
     }
 
 .dg ul {
@@ -877,6 +893,27 @@ position: fixed;
 
  
 }
+
+#myCanvas1
+
+{
+
+border: 1px solid black;
+  display: block;
+ 
+border: none;
+
+position: fixed;
+font-style: bold;
+  color: #ff9853;
+ 
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -300;
+   
+    background-size: cover;
+
+
+    }
 
 #lefty{
 
