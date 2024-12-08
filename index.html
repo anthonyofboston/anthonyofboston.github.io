@@ -155,7 +155,7 @@ Click "Intruder Detection" to activate the Intruder Detection system. The intrud
        
 
  
-        <video class="player" id="webcam" autoplay ></video>
+       <div id="webcam1"> <video class="player" id="webcam" autoplay ></video></div>
 
 
      
@@ -257,7 +257,7 @@ Click "Intruder Detection" to activate the Intruder Detection system. The intrud
   function brightnessOff(){
 
 
-document.getElementById("webcam").style.filter = 'brightness(0)';
+document.getElementById("webcam1").style.filter = 'brightness(0)';
 
   ctx.filter = 'brightness(0)';
   ctx2.filter = 'brightness(0)';
@@ -268,7 +268,7 @@ function invert(){
 
 
 
-document.getElementById("webcam").style.filter = 'invert(1)';
+document.getElementById("webcam1").style.filter = 'invert(1)';
 
  
   ctx.filter = 'invert(1)';
@@ -281,7 +281,7 @@ function invertandgrayscale(){
 
  
 
-document.getElementById("webcam").style.filter = ' invert(1) grayscale(1)';
+document.getElementById("webcam1").style.filter = ' invert(1) grayscale(1)';
 
   ctx.filter = ' invert(1) grayscale(1)';
   ctx2.filter = ' invert(1) grayscale(1)';
@@ -296,7 +296,7 @@ document.getElementById("webcam").style.filter = ' invert(1) grayscale(1)';
 
          
 
-  document.getElementById("webcam").style.transform = "scale(2)";
+  document.getElementById("webcam1").style.transform = "scale(2)";
           ctx.transform = ' scale(2)';
   ctx2.transform = ' scale(2)';
   ctx3.transform = ' scale(2)';
@@ -308,7 +308,7 @@ document.getElementById("webcam").style.filter = ' invert(1) grayscale(1)';
 
           
 
-  document.getElementById("webcam").style.transform = "scale(1)";
+  document.getElementById("webcam1").style.transform = "scale(1)";
            ctx.transform = ' scale(1)';
   ctx2.transform = ' scale(1)';
   ctx3.transform = ' scale(1)';
@@ -321,7 +321,7 @@ function invertandgrayscaleandcontrast(){
 
  
  
-document.getElementById("webcam").style.filter = ' invert(1) grayscale(1) contrast(2)';
+document.getElementById("webcam1").style.filter = ' invert(1) grayscale(1) contrast(2)';
 
  
   ctx.filter = ' invert(1) grayscale(1) contrast(2)';
@@ -336,7 +336,7 @@ function grayscale(){
 
  
  
- document.getElementById("webcam").style.filter = ' grayscale(1)';
+ document.getElementById("webcam1").style.filter = ' grayscale(1)';
 
 
  
@@ -351,7 +351,7 @@ function Reset(){
  
 
 
-document.getElementById("webcam").style.filter = ' none';
+document.getElementById("webcam1").style.filter = ' none';
 
 ctx.filter = 'none';
 ctx2.filter = 'none';
@@ -428,6 +428,7 @@ finishedCallback();
  
 
 <div id="draft" style="position:relative;z-index:200;left:0px;bottom:0px;font-size:5px" class="btn btn-success fileinput-button" ><span>Test Drone detection (upload video file)</span><input onclick="this.value = null" type="file" id="drafty" onchange="previewFiles(this);" accept="video/m4v" />
+    
 </div>
  
    
@@ -624,7 +625,7 @@ stopsec.onclick = function(){
 </div>
 <div id="input" style="position:relative;z-index:200;left:0px;bottom:0px;font-size:5px" class="btn btn-success fileinput-button">
 <span>Drone detection test (upload image file)</span>
-<input id="inputs" onclick="this.value = null" type="file" name="file"></input>
+<input id="inputs" onclick="this.value = null"  type="file" name="file"></input>
 
 </div>
 
@@ -764,7 +765,8 @@ document.getElementById("intru1").innerHTML = " ";
 
 
  
- 
+ </script>
+       <script>
  
   
                
