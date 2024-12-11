@@ -43,7 +43,7 @@ const startButton = document.getElementsByClassName("acoustics1")[0];
 const introSection = document.getElementsByClassName("intro")[0];
 document.getElementById("start").addEventListener("click", startmic);
 document.getElementById("stopmic1").addEventListener("click", disableacoustics);
- const permissionStatus = await navigator.permissions.query({ name: 'microphone' });
+ 
 function disableacoustics(){
    song1air.loop = false;
  document.getElementById("dronedemo").innerHTML = "Acoustic Detection paused";
