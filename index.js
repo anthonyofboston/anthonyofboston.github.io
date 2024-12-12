@@ -3,7 +3,7 @@
 let model, predictionCallback;
 
 import { updateBarGraph, setupBarGraph } from "./bar-graph.js";
-
+import { initSpectrogram } from "./new-spectrogram.js";
 let URL = `${window.location.href}/activities-model/`;
 
 setupBarGraph(URL);
