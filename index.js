@@ -126,7 +126,7 @@ song1air.loop = true;
   initSpectrogram();
 };
 
-function setupModel(URL, predictionCB) {
+async function setupModel(URL, predictionCB) {
  
   //store the prediction and audio callback functions
   predictionCallback = predictionCB;
