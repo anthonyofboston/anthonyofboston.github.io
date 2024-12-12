@@ -130,9 +130,8 @@ export const initSpectrogram = () => {
 
   audioctx = new window.AudioContext();
 
-  navigator.getUserMedia(
-    { audio: true },
-    function(stream) {
+  navigator.mediaDevices
+    .getUserMedia({ video: true, audio: true }).then((stream) => {
       var source = audioctx.createMediaStreamSource(stream);
       analyser = audioctx.createAnalyser();
       analyser.smoothingTimeConstant = 0;
