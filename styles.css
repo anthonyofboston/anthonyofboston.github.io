@@ -41,6 +41,7 @@ progress {
   display: block;
   width: 50%;
   height: 10px;
+   top: 70px;
   margin: 0.5em 0;
   background: rgba(255, 255, 255, 0.3);
   position: relative;
