@@ -9,6 +9,7 @@
 
   gtag('config', 'G-8GJC9LR03S');
 </script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -36,7 +37,178 @@
     </style>
 
 
+<script language="javascript">
+        var realConsoleLog = console.log;
+        console.log = function () {
+            var message = [].join.call(arguments, " ");
+            $(".scanner1").text(message);
+            realConsoleLog.apply(console, arguments);
+        };
+       
+    </script>
 
+
+    <script>
+
+
+async function connectToDevice() { 
+    navigator.bluetooth.getAvailability().then(available => {
+        if (available)
+            console.log("Scanning for drones");
+        else
+            console.log("Bluetooth is not supported");
+      });
+
+
+if (navigator.bluetooth) {
+    console.log('Requesting Bluetooth device...');
+
+    //
+
+    navigator.bluetooth.requestDevice({
+      filters: [ { namePrefix: 'DJI' },
+{ namePrefix: 'Mavic' },
+ { namePrefix: 'Evo' },                                                                                                                
+{ namePrefix: 'Potsenic' },
+                { namePrefix: 'Contixo' },
+                { namePrefix: 'F24' },
+                { namePrefix: 'F21' },
+                { namePrefix: 'F31' },
+                { namePrefix: 'F19' },
+                { namePrefix: 'Syma' },
+                { namePrefix: 'Parrot' },
+                { namePrefix: 'ANAFI' },
+                { namePrefix: 'Yuneec' },
+                { namePrefix: 'Attop' },
+                { namePrefix: 'JJRC' },
+                { namePrefix: 'Snaptain' },
+                { namePrefix: 'Flywoo' },
+                { namePrefix: 'GOKU' },
+                { namePrefix: 'Aquila16' },
+                { namePrefix: 'Pavo' },
+                { namePrefix: 'Pavo20' },
+                { namePrefix: 'Meteor75' },
+                { namePrefix: 'TWIG' },
+                { namePrefix: 'Cetus' },
+                { namePrefix: 'Newbeedrone' },
+                { namePrefix: 'SIMREX' },
+                { namePrefix: 'Vivitar' },
+                { namePrefix: 'UDIRC' },
+                { namePrefix: 'FREEFLY' },
+                { namePrefix: 'PowerVision' },
+                { namePrefix: 'LE-IDEA' },
+                { namePrefix: 'DEERC' },
+                { namePrefix: 'Beta65S' },
+                { namePrefix: 'SYMA' },
+                { namePrefix: 'Hubsan' },
+                { namePrefix: 'SJRC' },
+   { namePrefix: 'GEPRC' },    
+                { namePrefix: 'CineLog' },
+  { namePrefix: 'Holy Stone' }, 
+                { namePrefix: 'Air' }, 
+                { namePrefix: 'HS360' }, 
+                { namePrefix: 'HS600D' }, 
+                { namePrefix: 'HS900' }, 
+                { namePrefix: 'HS720' }, 
+                { namePrefix: 'HS710' }, 
+                { namePrefix: 'HS110g' }, 
+               { namePrefix: 'HS440' },
+               { namePrefix: 'HS190' },
+               { namePrefix: 'HS600' },
+              { namePrefix: 'F7' },
+              { namePrefix: 'Matrice' },
+              { namePrefix: 'Agras' },
+              { namePrefix: 'Avata' },
+{ namePrefix: 'Bwine' }, 
+  { namePrefix: 'Ruko' },                                                                                                                   { namePrefix: 'Spektrum' },  
+  { namePrefix: 'Phantom' },                                                                                                               { namePrefix: 'Skydio' },    
+  { namePrefix: 'Fimi' },                                                                                                                   { namePrefix: 'Autel' }, 
+ { namePrefix: 'E-flite' }, 
+  { namePrefix: 'Wingtra' },
+{ namePrefix: 'Opterra' },                                                                                                                     
+   { namePrefix: 'Microdrones' },                                                                                                             { namePrefix: 'AgEagle' },       
+    { namePrefix: 'eBee' },  
+       { namePrefix: 'Freefly' },                                                                                                              { namePrefix: 'Alta' },    
+     { namePrefix: 'Astro' },                                                                                                                   { namePrefix: 'Falcon' }, 
+    { namePrefix: 'ANAFI' },                                                                                                                   
+    { namePrefix: 'X10' },                                                                                                                    { namePrefix: 'SwellPro' }, 
+       { namePrefix: 'Fisherman' }, 
+        { namePrefix: 'Specta' },                                                                                                              { namePrefix: 'REDRIE' }, 
+{ namePrefix: 'FPV' }, 
+   { namePrefix: 'SplashDrone4' },                                                                                                              { namePrefix: 'Spry+' },        
+    { namePrefix: 'One Gen' },       
+     { namePrefix: 'XAG' },   
+                                                                                                                     
+ { namePrefix: 'P100' }, 
+                                                                                                                     
+ { namePrefix: 'P40' }, 
+
+   { namePrefix: 'V40' },                                                                                                                     { namePrefix: 'P4' }, 
+     { namePrefix: 'Spreading Wings' },                                                                                                        { namePrefix: 'Interstate' },
+ { namePrefix: 'MQ-1' },
+{ namePrefix: 'RQ-2' },
+{ namePrefix: 'MQ-5' },
+
+{ namePrefix: 'RQ-14' },
+
+{ namePrefix: 'RQ-16' },
+{ namePrefix: 'FQM-151' },
+{ namePrefix: 'CQ-24A' },
+
+{ namePrefix: 'Desert Hawk' },
+
+{ namePrefix: 'Maveric' },
+{ namePrefix: 'MQ-1C' },
+{ namePrefix: 'RQ-4' },
+{ namePrefix: 'MQ-4C' },
+{ namePrefix: 'RQ-7' },
+{ namePrefix: 'MQ-8B' },
+{ namePrefix: 'MQ-9' },
+
+{ namePrefix: 'CQ-10' },
+{ namePrefix: 'RQ-11' },
+{ namePrefix: 'RQ-12' },
+{ namePrefix: 'MQ-19' },
+{ namePrefix: 'RQ-20' },
+
+{ namePrefix: 'RQ-21' },
+{ namePrefix: 'RQ-170' },
+{ namePrefix: 'RQ-180' },
+{ namePrefix: 'Altius-600' },
+{ namePrefix: 'Black Hornet Nano' },
+{ namePrefix: 'Coyote' },
+{ namePrefix: 'Jump 20' },
+{ namePrefix: 'Northrop' },
+{ namePrefix: 'Phoenix' },
+{ namePrefix: 'Snipe' },
+{ namePrefix: 'Switchblade' },
+{ namePrefix: 'Stalker' },
+{ namePrefix: 'ScanEagle' },
+{ namePrefix: 'TRV-150C' },
+{ namePrefix: 'MQ-25' },
+{ namePrefix: 'Horus' },
+],      
+optionalServices: ['battery_service']   
+}).then(device => {
+      console.log('> Name:      ' + device.name + '> Id:        ' + device.id );
+      
+   
+    })
+    .catch(error => {
+      console.log( 'Scanner stopped');
+    });
+  }
+  else {
+    console.log('Scanner stopped')
+  }
+}
+
+
+
+    
+    
+
+ </script>
 
     
 
@@ -126,7 +298,7 @@ Click "Intruder Detection" to activate the Intruder Detection system. The intrud
 <p  id="intru1"></p>
 <p id="intru2"></p>
 <p id="intru"></p>
-    <p id="demodrone"></p>
+    <p class="scanner1"  id="demodrone"></p>
 <!-- Left -->
 <div id="lefty" class="left" style="position:fixed;left:15px; top:150px" style="position:fixed"   >
 
@@ -818,11 +990,11 @@ document.getElementById("intru1").innerHTML = " ";
 
 
 
-<input style="position:relative;z-index:200;left:0px;bottom:0px;font-size:5px" type="button" id="webcamButton9" value="Delete screen text"></input >
+<input  style="position:relative;z-index:200;left:0px;bottom:0px;font-size:5px" type="button" onClick="connectToDevice()" id="webcamButton9" value="Scan for Drones (Bluetooth)"></input >
 
       
 
-<input style="position:relative;z-index:200;left:0px;bottom:0px;font-size:5px" type="button" id="webcamButton16" value= "Display on-screen text" </input>
+
 
        <input style="position:relative;z-index:200;left:0px;bottom:0px;font-size:5px" type="button" id="webcamButtonzoom" onClick="webcamzoom()" value= "Zoom in" </input>
 
