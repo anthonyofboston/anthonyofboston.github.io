@@ -54,7 +54,7 @@
 async function connectToDevice() { 
     navigator.bluetooth.getAvailability().then(available => {
         if (available)
-            console.log("Scanning for drones");
+            console.log("Scanning for drones...");
         else
             console.log("Bluetooth is not supported");
       });
